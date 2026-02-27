@@ -95,7 +95,7 @@ function App() {
 
         {/* Main Content Grid */}
         <main className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 ">
-          {portfolioData.map((section, sectionIndex) => (
+          {portfolioData.map((section) => (
             <section key={section.title}>
               <h2 className="text-tertiary heading-font text-sm font-medium mb-6 tracking-wide">
                 {section.title}

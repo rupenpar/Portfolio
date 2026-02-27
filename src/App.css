@@ -1,0 +1,91 @@
+/* Additional styles for the portfolio */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom font classes */
+.heading-font {
+  font-family: 'Poppins', 'Helvetica Neue', 'Arial', sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em;
+  font-display: swap;
+}
+
+.body-font {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.body-font-medium {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* Monochromatic color palette */
+.text-primary {
+  color: #f4f4f5;
+}
+
+.text-secondary {
+  color: #a1a1aa;
+}
+
+.text-tertiary {
+  color: #71717a;
+}
+
+.text-accent {
+  color: #d4d4d8;
+}
+
+.text-accent-hover:hover {
+  color: #f4f4f5;
+}
+
+/* Custom link hover effects */
+a {
+  transition: all 0.25s ease-in-out;
+}
+
+/* Border colors */
+.border-muted {
+  border-color: #27272a;
+}
+
+/* Ensure proper text rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Smooth focus states */
+.focus-ring:focus {
+  outline: 2px solid #52525b;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Glow effect for tech stack icons */
+.drop-shadow-glow {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 16px rgba(255, 255, 255, 0.3));
+}
